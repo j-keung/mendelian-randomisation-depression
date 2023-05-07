@@ -1,0 +1,35 @@
+In the command prompt 
+
+
+Using PLINK for LD clumping and LD pruning:
+
+LD clumping for each of the significant traits (from GWAS summary statistics):
+
+./plink.exe --clump Educational_attainment.txt --clump-p1 0.0000004043475 --clump-p2 0.0000004043475 --clump-r2 0.1 --clump-kb 3000 --bfile 1KGPhase3
+
+
+
+LD pruning for 1000 Genomes Phase 3 dataset:
+
+./plink.exe --indep-pairwise 3000 300 0.1 --bfile 1KGPhase3 
+
+
+
+
+Preparing the data:
+
+For GWAS reported with odds ratios and not beta values, convert like so:
+ln(OR) = beta value   
+NR>1 excludes first line
+1 means to print every line. Essential if you want the header to be included as well.
+
+log in unix is natural log
+awk 'NR>1{ $7=log($7); } 1' < Schizophrenia.txt > Schizophreniabeta.txt
+ 
+
+Change name of column file from Odds Ratio to Beta (sed -i edits in place)
+sed -i 's/OR/Beta/g' Schizophreniabeta.txt 
+
+
+
+
