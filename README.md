@@ -5,8 +5,9 @@ Significant variants were identified in a forthcoming Major Depressive Disorder 
 The significant variants were used to conduct a phenome-wide association study, Fisher's exact test and Mendelian Randomisation.
 
 The scripts contain publicly available data from the following papers in the form of GWAS summary statistics: <br>
+
 **Educational attainment**: <br>
-Lee, J.J., Wedow, R., Okbay, A. et al. Gene discovery and polygenic prediction from a genome-wide association study of educational attainment in 1.1 million individuals. Nat Genet 50, 1112–1121 (2018). <br/>
+Lee, J.J., Wedow, R., Okbay, A. et al. Gene discovery and polygenic prediction from a genome-wide association study of educational attainment in 1.1 million individuals. Nat Genet 50, 1112–1121 (2018). <br>
 https://doi.org/10.1038/s41588-018-0147-3
 
 **Schizophrenia**: <br>
